@@ -1,6 +1,0 @@
-package linkedlist
-
-
-class LinkedList {
-
-}
