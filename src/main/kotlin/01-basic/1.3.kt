@@ -1,4 +1,4 @@
-package basic
+package `01-basic`
 
 fun multiplicationTable(size: Int) {
     for (number in 1..size) {

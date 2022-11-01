@@ -1,4 +1,4 @@
-package basic
+package `01-basic`
 
 fun findNumber(value: Int, numbers: List<Int>): Boolean {
     for (number in numbers) {
