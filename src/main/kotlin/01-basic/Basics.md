@@ -24,15 +24,15 @@ Using the correct data structure also helps to provide context to the reader. As
 
 ### Self-Improvement
 
-Knowing the strategies used by algorithms to solve tricky problems gives you ideas for improvements that you can make to your code. The Swift
-standard library has a small set of general-purpose collection types;  they don’t cover every case. And, yet, as you will see, these primitives can be used as a great starting point for building more complex and  special-purpose abstractions. Knowing more data structures than just the standard array and dictionary gives you a bigger collection of tools that you can use to build your apps.
+Knowing the strategies used by algorithms to solve tricky problems gives you ideas for improvements that you can make to your code. 
+Knowing more data structures than just the standard array and dictionary gives you a bigger collection of tools that you can use to build your apps.
 
 > A wise man once said: The practice of algorithms is akin to how musicians practice their scales. The more polished your foundations are, the better you will become in working with more complex pieces of software.
 >
 
 ### List performance
 
-Aside from being a random-access collection, there are other areas of performance that are of interest on how well or poorly does the data structures fare when the amount of data it contains needs to grow. For lists, this varies on two factors.
+A side from being a random-access collection, there are other areas of performance that are of interest on how well or poorly does the data structures fare when the amount of data it contains needs to grow. For lists, this varies on two factors.
 
 ```kotlin
 mutablePlaces.add("Budapest")
