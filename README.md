@@ -21,7 +21,10 @@ The **`Big O notation`** for the different levels of scalability in two dimensio
 
 **`Time complexity`** is a measure of the time required to run an algorithm as the input size increases. Instead of measuring actual time required in executing each statement in the code, it considers `how many times each statement executes`.
 
-- Constant time
-- Linear time
+- Constant time: O(1)
+- Linear time: O(n)
+- Quadratic time: O(n^2)
+- Logarithmic time: O(log n)
+- Quasilinear time: O(n log n)
 
 ### Space complexity
