@@ -6,7 +6,7 @@ How well will it scale?
 
 From an architectural perspective, scalability refers to how flexible your app is as your features are increasing. 
 
-From a `database perspective`**, scalability is about the capability of a database to handle an increasing amount of data and users. 
+From a **`database perspective`**, scalability is about the capability of a database to handle an increasing amount of data and users. 
 
 For a **`web server`**, being scalable can mean that it can serve a high number of users accessing it at the same time.
 
