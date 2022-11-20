@@ -13,9 +13,65 @@ package main.kotlin.easy
 
 data class ListNode(
     val value: Int,
-    val next: ListNode? = null
-)
+    var next: ListNode? = null
+) {
+    override fun toString(): String {
+        return if (next!=null) {
+            "$value -> $next"
+        } else {
+            "$value"
+        }
+    }
+}
 
 class AddTwoNumbers {
 
+    fun add(l1: ListNode?,  l2: ListNode?): ListNode? {
+        var lnode1 = l1
+        var lnode2 = l2
+
+        val dummyHead = ListNode(0)
+        var curr = dummyHead
+
+        var carry = 0
+        var sum = 0
+
+        while(lnode1.isNotNull() || lnode2.isNotNull() || carry.isNotZero()) {
+            val x = lnode1?.value ?: 0
+            val y =  lnode2?.value ?: 0
+
+            sum += carry + x+  y
+
+            carry = sum/10
+
+            curr.next = ListNode(sum%10)
+            curr = curr.next ?: ListNode(0)
+
+            if (lnode1.isNotNull()) lnode1 = lnode1?.next
+            if (lnode2.isNotNull()) lnode2 = lnode2?.next
+        }
+        return dummyHead.next
+    }
+}
+
+fun main() {
+    val lnode1 = ListNode(1)
+    val lnode2 = ListNode(2)
+    lnode1.next = lnode2
+
+    val lnode3 = ListNode(5)
+    val lnode4 = ListNode(6)
+    lnode3.next = lnode4
+
+    val solution = AddTwoNumbers()
+    val result = solution.add(l1 = lnode1, l2 = lnode3)
+    println(result)
+}
+
+private fun ListNode?.isNotNull(): Boolean {
+    return this != null
+}
+
+private fun Int?.isNotZero(): Boolean {
+    return this != 0
 }
